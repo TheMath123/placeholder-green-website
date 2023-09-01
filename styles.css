@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  color: #e7e7e7;
+  background: #1b1f23;
+
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background: #3d444b;
+
+  box-shadow: -1px 2px 6px 0px rgba(255, 255, 255, 0.05),
+    -2px 2px 6px 0px rgba(255, 255, 255, 0.05),
+    2px 2px 6px 0px rgba(255, 255, 255, 0.05),
+    0px 2px 6px 0px rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid #a5a5a51b;
+  padding: 2rem;
+
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  .grn-logo {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+    & h1 {
+      color: #009f00;
+    }
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .button {
+    cursor: pointer;
+
+    padding: 1rem 2rem;
+
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: white;
+    background: linear-gradient(137deg, #009f00 3.37%, #080 100%);
+
+    border-radius: 8px;
+    border: 0;
+
+    transition: all 0.3s;
+    box-shadow: -1px 2px 6px 0px rgba(255, 255, 255, 0.05),
+      -2px 2px 6px 0px rgba(255, 255, 255, 0.05),
+      2px 2px 6px 0px rgba(255, 255, 255, 0.05),
+      0px 2px 6px 0px rgba(255, 255, 255, 0.05);
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+
+    &:active {
+      transform: scale(0.8);
+    }
+  }
+}
+
+@keyframes lightGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px 5px rgba(40, 167, 69, 0.1),
+      0 0 20px 10px rgba(40, 167, 69, 0.08);
+  }
+  25% {
+    box-shadow: 0 0 10px 5px rgba(40, 167, 69, 0.1),
+      10px -10px 20px 10px rgba(40, 167, 69, 0.08);
+  }
+  50% {
+    box-shadow: 0 0 10px 5px rgba(40, 167, 69, 0.1),
+      0 0 20px 10px rgba(40, 167, 69, 0.08);
+  }
+  75% {
+    box-shadow: 0 0 10px 5px rgba(40, 167, 69, 0.1),
+      -10px 10px 20px 10px rgba(40, 167, 69, 0.08);
+  }
+}
+
+.seuBotao {
+  animation: lightGlow 8s infinite;
+}
+
+.animate {
+  animation: lightGlow 8s infinite;
+}

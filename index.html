@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test CSS Nesting</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <img class="grn-logo" src="/public/greens-logo.svg" alt="Greens" />
+
+      <div class="container">
+        <h1>Greens Group</h1>
+        <h2>Just Seek Knowledge</h2>
+      </div>
+
+      <button class="button animate" id="knowledge">Seek Knowledge</button>
+    </main>
+
+    <script>
+      let button = document.getElementById("knowledge");
+
+      button.addEventListener("click", () => {
+        window.location.href = "https://discord.gg/wBt2F9H";
+      });
+    </script>
+  </body>
+</html>
